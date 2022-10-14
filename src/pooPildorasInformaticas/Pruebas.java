@@ -13,6 +13,7 @@ public class Pruebas {
         System.out.println(trabajador2.devuelveDatos());
         System.out.println(trabajador3.devuelveDatos());
         System.out.println(trabajador4.devuelveDatos());
+        System.out.println(Empleados.dameIdSiguiente());
     }
 }
 class Empleados{
@@ -28,6 +29,9 @@ class Empleados{
     public String devuelveDatos(){
         return "El nombre es: "+nombre+" y trabaja en la seccion de: "+seccion+" y el id: "+
                 id ;
+    }
+    public static String dameIdSiguiente(){
+        return "El id siguiente es: "+idSiguiente;
     }
     private final String nombre;
     private String seccion;
