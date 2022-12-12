@@ -1,6 +1,4 @@
-package pooUdemy;
-
-import pooUdemy.Aritmetica;
+package udemy.poo;
 
 public class PruebaAritmetica {
     public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package pooUdemy;
+package udemy.poo;
 
 public class Aritmetica {
     //Atributos de la clase
