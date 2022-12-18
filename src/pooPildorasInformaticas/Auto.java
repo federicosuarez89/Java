@@ -21,9 +21,12 @@ public class Auto {
 
     //Creamos un metodo getter,lo identificamos porque devuelve un valor
     public String dimeDatosGenerales(){
-        return "La plataforma del auto tiene "+ruedas+" ruedas "+".Mide "+largo/1000+
-                " metros con un ancho de "+ancho+" cm y un peso de plataforma de "+
-                pesoPlataforma+" kg";
+        String imprimeRuedas = "El auto tiene "+ruedas+" ruedas";
+        String imprimeLargo= "Mide "+largo/1000+" metros";
+        String imprimeAncho = " Tiene un ancho de "+ancho+" cm";
+        String imprimePesoPlataforma= "Tiene un peso de plataforma de "+pesoPlataforma+" kg";
+        String resultado = imprimeRuedas + imprimeLargo + imprimeAncho + imprimePesoPlataforma;
+        return resultado;
     }
 
 
@@ -33,7 +36,8 @@ public class Auto {
     }
     //Creamos un getter que nos informe el color(devuelve valor)
     public String dimeColor(){
-        return "El color del auto es: "+color;
+        String imprimeColor = "El color del auto es: "+color;
+        return imprimeColor;
     }
 
 
@@ -48,9 +52,11 @@ public class Auto {
     //Creamos un getter(devuelve valor)
     public String dimeAsientos(){
         if (asientosCuero == true){
-            return "El auto tiene asientos de cuero";
+            String imprimeAsientosCuero = "El auto tiene asientos de cuero";
+            return imprimeAsientosCuero;
         }else {
-            return "El auto tiene asientos de pana";
+            String imprimeAsientosPana = "El auto tiene asientos de pana";
+            return imprimeAsientosPana;
         }
     }
 
@@ -66,9 +72,11 @@ public class Auto {
     //Creamos un getter(devuelve valor)
     public String dimeAireAcondicionado(){
         if (aireAcondicionado==true){
-            return "El auto tiene calefaccion";
+            String imprimeCalefaccion = "El auto tiene calefaccion";
+            return imprimeCalefaccion;
         }else {
-            return "El auto tiene aire acondicionado";
+            String imprimeAC = "El auto tiene aire acondicionado";
+            return imprimeAC;
         }
     }
 

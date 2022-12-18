@@ -13,11 +13,11 @@ public class Uso_Auto {
         System.out.println(Renault.dimeColor());
 
         //Establecemos si tiene asientos de cuero y mandamos a imprimir
-        Renault.configuraAsientos(JOptionPane.showInputDialog("¿Tiene asientos de cuero?"));
+        Renault.configuraAsientos(JOptionPane.showInputDialog("¿Tiene asientos de cuero? (si/no)"));
         System.out.println(Renault.dimeAsientos());
 
         //Establecemos si tiene aire acondicionado y mandamos a imprimir
-        Renault.configuraAireAcondicionado(JOptionPane.showInputDialog("¿Tiene aire acondicionado?"));
+        Renault.configuraAireAcondicionado(JOptionPane.showInputDialog("¿Tiene aire acondicionado? (si/no)"));
         System.out.println(Renault.dimeAireAcondicionado());
 
         //Como este metodo unifica setter y getter solo se llama de esta manera
