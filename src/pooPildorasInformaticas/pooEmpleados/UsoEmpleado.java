@@ -1,4 +1,4 @@
-package pooPildorasInformaticas;
+package pooPildorasInformaticas.pooEmpleados;
 
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -45,6 +45,13 @@ public class UsoEmpleado {
 }
 //Creamos una nueva clase
 class Empleado{
+
+    //Creamos las variables de clase
+    private String nombre;
+    private double sueldo;
+    private Date altaContrato;
+
+    //Creamos el constructor de la clase
     public Empleado(String nombre,double sueldo,int agno,int mes,int dia){
         this.nombre=nombre;
         this.sueldo=sueldo;
@@ -68,7 +75,5 @@ class Empleado{
         double aumento=sueldo*porcentaje/100;
         sueldo+=aumento;
     }
-    private String nombre;
-    private double sueldo;
-    private Date altaContrato;
+
 }
