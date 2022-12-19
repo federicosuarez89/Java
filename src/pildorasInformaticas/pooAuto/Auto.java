@@ -21,10 +21,10 @@ public class Auto {
 
     //Creamos un metodo getter,lo identificamos porque devuelve un valor
     public String dimeDatosGenerales(){
-        String imprimeRuedas = "El auto tiene "+ruedas+" ruedas";
-        String imprimeLargo= "Mide "+largo/1000+" metros";
-        String imprimeAncho = " Tiene un ancho de "+ancho+" cm";
-        String imprimePesoPlataforma= "Tiene un peso de plataforma de "+pesoPlataforma+" kg";
+        String imprimeRuedas = "El vehiculo tiene "+ruedas+" ruedas.";
+        String imprimeLargo= "\nMide "+largo/1000+" metros";
+        String imprimeAncho = "\nTiene un ancho de "+ancho+" cm";
+        String imprimePesoPlataforma= "\nTiene un peso de plataforma de "+pesoPlataforma+" kg";
         String resultado = imprimeRuedas + imprimeLargo + imprimeAncho + imprimePesoPlataforma;
         return resultado;
     }
@@ -36,7 +36,7 @@ public class Auto {
     }
     //Creamos un getter que nos informe el color(devuelve valor)
     public String dimeColor(){
-        String imprimeColor = "El color del auto es: "+color;
+        String imprimeColor = "El color del vehiculo es: "+color;
         return imprimeColor;
     }
 
@@ -52,10 +52,10 @@ public class Auto {
     //Creamos un getter(devuelve valor)
     public String dimeAsientos(){
         if (asientosCuero == true){
-            String imprimeAsientosCuero = "El auto tiene asientos de cuero";
+            String imprimeAsientosCuero = "El vehiculo tiene asientos de cuero";
             return imprimeAsientosCuero;
         }else {
-            String imprimeAsientosPana = "El auto tiene asientos de pana";
+            String imprimeAsientosPana = "El vehiculo tiene asientos de pana";
             return imprimeAsientosPana;
         }
     }

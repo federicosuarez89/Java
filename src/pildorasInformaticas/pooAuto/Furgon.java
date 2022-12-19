@@ -13,4 +13,11 @@ public class Furgon extends Auto{
         this.asientosExtras = asientosExtras;
         this.capacidadExtraFurgon = capacidadExtraFurgon;
      }
+
+     //Creamos un getter para obtener los datos del furgon
+     public String getDataFurgon(){
+        String messageCapacity = "La capacidad de carga es: "+capacidadExtraFurgon;
+        String menssageSeating = "\nLa cantidad de asientos es: "+asientosExtras;
+        return messageCapacity+menssageSeating;
+     }
 }
