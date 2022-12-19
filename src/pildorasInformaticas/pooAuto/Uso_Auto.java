@@ -1,6 +1,4 @@
-package pooPildorasInformaticas.pooAuto;
-
-import pooPildorasInformaticas.pooAuto.Auto;
+package pildorasInformaticas.pooAuto;
 
 import javax.swing.*;
 

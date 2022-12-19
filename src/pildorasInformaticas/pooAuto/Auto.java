@@ -1,4 +1,4 @@
-package pooPildorasInformaticas.pooAuto;
+package pildorasInformaticas.pooAuto;
 
 public class Auto {
     private int ruedas;

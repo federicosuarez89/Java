@@ -1,11 +1,17 @@
-/*package udemy.pasoValorYReferencia;
+package udemy.pasoValorYReferencia;
 
 public class PasoPorReferencia {
-    public static void modificarPersona(Pesona arg){
-        arg.ca
-    }
-    public static void main(String[] args) {
 
+    //Atributos de la clase
+    String  name;
+
+    //Creamos un getter
+    public String getName(){
+        return this.name;
+    }
+
+    //Creamos un setter
+    public void setName(String newName){
+        this.name = newName;
     }
 }
-*/

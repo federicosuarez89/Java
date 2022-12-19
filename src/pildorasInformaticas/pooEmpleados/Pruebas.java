@@ -1,4 +1,4 @@
-package pooPildorasInformaticas.pooEmpleados;
+package pildorasInformaticas.pooEmpleados;
 
 public class Pruebas {
     public static void main(String[] args) {
