@@ -17,12 +17,21 @@ public class Pruebas {
     }
 }
 class Empleados{
+
+    //Variables de clase
+    private final String nombre;
+    private String seccion;
+    private int id;
+    private static int idSiguiente=1;
+
+    //Constructor de la clase
     public Empleados(String nombre){
         this.nombre=nombre;
         seccion="Administracion";
         id=idSiguiente;
         idSiguiente++;
     }
+
     public void cambiaSeccion(String seccion){
         this.seccion=seccion;
     }
@@ -33,8 +42,5 @@ class Empleados{
     public static String dameIdSiguiente(){
         return "El id siguiente es: "+idSiguiente;
     }
-    private final String nombre;
-    private String seccion;
-    private int id;
-    private static int idSiguiente=1;
+
 }

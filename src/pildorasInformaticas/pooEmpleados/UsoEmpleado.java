@@ -15,8 +15,9 @@ public class UsoEmpleado {
             e.subeSueldo(5);
         }
         for (Empleado e:misEmpleados) {
-            System.out.println("Nombre: " + e.dameNombre() + " Sueldo: " + e.dameSueldo()
-                    + " Fecha de alta: " + e.dameFechaContrato());
+            System.out.println("Nombre: " + e.dameNombre() + "\nSueldo: " + e.dameSueldo()
+                    + "\nFecha de alta: " + e.dameFechaContrato());
+            System.out.println("---------------------------------");
         }
     }
 }
@@ -36,8 +37,8 @@ class Empleado{
         altaContrato=calendario.getTime();
     }
     //Creamos otro constructor para realizar sobrecarga de constructores
-    public Empleado(String nom){
-        this(nom,30000,2000,01,01);
+    public Empleado(String nombre){
+        this(nombre,30000,2000,01,01);
     }
 
     //creamos un getter (devuelve un valor)
@@ -57,5 +58,5 @@ class Empleado{
         double aumento=sueldo*porcentaje/100;
         sueldo+=aumento;
     }
-
 }
+
