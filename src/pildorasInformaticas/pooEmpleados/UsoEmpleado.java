@@ -5,20 +5,26 @@ import java.util.GregorianCalendar;
 
 public class UsoEmpleado {
     public static void main(String[] args) {
-        Empleado [] misEmpleados=new Empleado[4];
+        Herencia jefe_RRHH = new Herencia("Juan",55000,2006,9,25);
+        jefe_RRHH.setIncentivo(2570);
+        Empleado [] misEmpleados=new Empleado[6];
         misEmpleados[0]=new Empleado("Federico Suarez",85000,2020,10,19);
         misEmpleados[1]=new Empleado("Ana Lopez",95000,2021,1,18);
         misEmpleados[2]=new Empleado("Maria Martin",80000,2022,8,20);
         misEmpleados[3]=new Empleado("Antonio Fernandez");
+        misEmpleados[4]=jefe_RRHH;//Polimorfismo o principio de sustitucion
+        misEmpleados[5]=new Herencia("Maria",95000,1999,5,26);
 
         for(Empleado e:misEmpleados){
             e.subeSueldo(5);
         }
         for (Empleado e:misEmpleados) {
-            System.out.println("Nombre: " + e.dameNombre() + "\nSueldo: " + e.dameSueldo()
+            System.out.println("Nombre: " + e.dameNombre() + "\nSueldo: "
+                    + e.dameSueldo()
                     + "\nFecha de alta: " + e.dameFechaContrato());
             System.out.println("---------------------------------");
         }
+
     }
 }
 //Creamos una nueva clase
