@@ -5,6 +5,6 @@ public class TestCoche {
         Coche auto1 = new Coche();
         auto1.sumaPuerta();
         System.out.println("El auto tiene "+auto1.puertas+" puertas");
-        
+
     }
 }
