@@ -14,5 +14,6 @@ public class Ventas {
 
         //Imprimimos esta orden de comprar
         orden1.mostrarOrden();
+
     }
 }
