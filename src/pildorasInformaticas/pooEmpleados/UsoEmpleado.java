@@ -14,6 +14,9 @@ public class UsoEmpleado {
         misEmpleados[3]=new Empleado("Antonio Fernandez");
         misEmpleados[4]=jefe_RRHH;//Polimorfismo o principio de sustitucion
         misEmpleados[5]=new Herencia("Maria",95000,1999,5,26);
+        //Casting para convertir un tipo de objeto en otro
+        Herencia jefaFinanzas = (Herencia) misEmpleados[5];
+        jefaFinanzas.setIncentivo(55000);
 
         for(Empleado e:misEmpleados){
             e.subeSueldo(5);
