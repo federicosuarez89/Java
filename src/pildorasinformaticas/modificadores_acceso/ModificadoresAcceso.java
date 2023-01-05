@@ -6,7 +6,7 @@ public class ModificadoresAcceso {
     /*
         Tenemos 4 posibilidades de modificadores de acceso:
             *Public:
-                Se permite acceso desde cualquier lugar  
+                Se permite acceso desde cualquier lugar
             *Protected:
                 Se permite el acceso dentro de la misma clase,tambien a clases
                 dentro del mismo paquete, tambien a clases hijas pero no a
