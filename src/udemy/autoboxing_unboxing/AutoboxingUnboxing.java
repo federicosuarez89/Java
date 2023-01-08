@@ -13,7 +13,7 @@ public class AutoboxingUnboxing {
             char-Character
             short-Short
          */
-        
+
         //es un tipo primitivo
         int entero = 10;
         System.out.println("entero = " + entero);
