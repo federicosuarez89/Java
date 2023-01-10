@@ -1,5 +1,4 @@
-package pildorasinformaticas.pooempleados;
-
+package pildorasinformaticas.interfaces;
 import java.util.Arrays;
 import java.util.Date;
 import java.util.GregorianCalendar;
@@ -19,6 +18,10 @@ public class UsoEmpleado {
         Herencia jefaFinanzas = (Herencia) misEmpleados[5];
         jefaFinanzas.setIncentivo(55000);
 
+        System.out.println(jefaFinanzas.tomar_decisiones("Dar un aumento a los empleados"));
+
+        jefaFinanzas.establece_bonus(500);
+        System.out.println("El jefe: "+jefaFinanzas.dameNombre()+" tiene un bonus de :"+jefaFinanzas.dameSueldo());
 
         for(Empleado e:misEmpleados){
             e.subeSueldo(5);
@@ -35,12 +38,15 @@ public class UsoEmpleado {
     }
 }
 //Creamos una nueva clase
-class Empleado implements Comparable{
+class Empleado implements Comparable,Trabajadores{
 
     //Creamos las variables de clase
     private String nombre;
     private double sueldo;
     private Date altaContrato;
+
+    //++idSiguiente;
+    //id = idSiguiente;
 
     //Creamos un constructor de la clase
     public Empleado(String nombre,double sueldo,int agno,int mes,int dia){
@@ -71,7 +77,7 @@ class Empleado implements Comparable{
         double aumento=sueldo*porcentaje/100;
         sueldo+=aumento;
     }
-
+    @Override
     public int compareTo(Object miObjeto){
         Empleado otroEmpleado = (Empleado) miObjeto;
         if (this.sueldo<otroEmpleado.sueldo){
@@ -82,6 +88,11 @@ class Empleado implements Comparable{
             return 0;
         }
 
+    }
+
+    @Override
+    public double establece_bonus(double aumento) {
+        return Trabajadores.bonus_base + aumento;
     }
 }
 
