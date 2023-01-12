@@ -1,4 +1,4 @@
-package pildorasinformaticas.graficos;
+package pildorasinformaticas.graficos.nuevos_marcos;
 
 import javax.swing.*;
 
