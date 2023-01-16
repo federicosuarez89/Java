@@ -11,7 +11,7 @@ public class ManejoArchivos {
         try {
             //Creamos el archivo
             PrintWriter salida = new PrintWriter(archivo);
-            //Cerramos
+            //Cerramos el flujo
             salida.close();
             System.out.println("Se ha generado exitosamente el archivo .txt");
 
@@ -30,7 +30,7 @@ public class ManejoArchivos {
             PrintWriter salida = new PrintWriter(archivo);
             //Escribimos en el archivo
             salida.println(texto);
-            //Cerramos
+            //Cerramos el flujo
             salida.close();
             System.out.println("Se ha escrito exitosamente nuestro archivo .txt");
 
@@ -49,7 +49,7 @@ public class ManejoArchivos {
             PrintWriter salida = new PrintWriter(new FileWriter(archivo,true));
             //Escribimos en el archivo
             salida.println(texto);
-            //Cerramos
+            //Cerramos el flujo
             salida.close();
             System.out.println("Se ha escrito exitosamente nuestro archivo .txt");
 
@@ -58,5 +58,27 @@ public class ManejoArchivos {
         } catch (IOException e) {
             e.printStackTrace();
         }
+    }
+
+    public static void leerArchivo(String nombreArchivo){
+        //Instanciamos un objeto de tipo File
+        File archivo = new File(nombreArchivo);
+
+        try {
+            //Instanciamos un objeto de tipo buffer
+            BufferedReader entrada = new BufferedReader(new FileReader(archivo));
+            //Leemos nuestro archivo
+            String lectura = entrada.readLine();
+            while (lectura != null){
+                System.out.println(lectura);
+                lectura = entrada.readLine();
+            }
+            entrada.close();
+        } catch (FileNotFoundException e) {
+            e.printStackTrace();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+
     }
 }
