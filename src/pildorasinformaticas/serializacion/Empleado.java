@@ -7,6 +7,8 @@ public class Empleado implements Serializable {
     private String nombre;
     private double sueldo;
     private Date fechaContrato;
+
+    private static final long serialVersionUID = 1L;
     public Empleado(String nombre,double sueldo,int anho,int mes,int dia){
         this.nombre = nombre;
         this.sueldo = sueldo;

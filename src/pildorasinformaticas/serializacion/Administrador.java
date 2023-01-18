@@ -2,6 +2,8 @@ package pildorasinformaticas.serializacion;
 
 public class Administrador extends Empleado{
     private double incentivo;
+
+    private static final long serialVersionUID = 1L;
     public Administrador(String nombre,double sueldo, int anho,int mes,int dia){
         super(nombre, sueldo, anho, mes, dia);
         incentivo = 0;
