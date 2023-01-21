@@ -12,6 +12,6 @@ public class Empleado {
     }
 
     public String getDatos(){
-        return "Nombre: "+this.nombre+"\nEdad: "+this.edad+"\nSueldo: "+this.sueldo;
+        return "\n***************\nNombre: "+this.nombre+"\nEdad: "+this.edad+"\nSueldo: "+this.sueldo;
     }
 }

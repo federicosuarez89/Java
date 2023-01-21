@@ -1,6 +1,7 @@
 package pildorasinformaticas.programacion_generica.arrayList;
 
 import java.util.ArrayList;
+import java.util.Iterator;
 
 public class TestEmpleado {
     public static void main(String[] args) {
@@ -33,9 +34,19 @@ public class TestEmpleado {
         //listaEmpleados.trimToSize();
 
         //Imprimimos la cantidad de elementos en el ArrayList
+       /*
         System.out.println(listaEmpleados.size());
         for (Empleado e:listaEmpleados) {
             System.out.println(e.getDatos());
+        }
+        */
+
+        //Creamos un iterador para recorrer cada elemento de la coleccion
+        Iterator<Empleado> iterator1 = listaEmpleados.iterator();
+
+        //Comprobamos si hay mas objetos en la coleccion
+        while (iterator1.hasNext()){
+            System.out.println(iterator1.next().getDatos());
         }
     }
 }
