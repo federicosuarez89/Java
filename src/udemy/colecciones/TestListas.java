@@ -2,7 +2,7 @@ package udemy.colecciones;
 
 import java.util.*;
 
-public class TestColecciones {
+public class TestListas {
     public static void main(String[] args) {
         //Las listas guardan el orden en que son ingresados sus elementos
         List miLista = new ArrayList<>();
