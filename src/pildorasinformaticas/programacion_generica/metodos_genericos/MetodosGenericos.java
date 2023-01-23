@@ -16,6 +16,6 @@ public class MetodosGenericos {
         System.out.println(MisMatrices.getElemntosArray(listaEmpleados));
 
         System.out.println(MisMatrices.getDatoMenor(nombres));
-        
+
     }
 }
